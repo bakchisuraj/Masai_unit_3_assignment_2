@@ -1,0 +1,101 @@
+
+<html>
+<head>
+    <title>feedback </title>
+    <style>
+        #fst{
+            height: 500px;
+            width: 500px;
+            border: 1px solid black;
+            background-color: rgb(211, 96, 123);
+            margin: auto;
+            padding: 10%;
+           
+        }
+        #snd{
+            height: 400px;
+            width: 310px;
+            border: 1px solid black;
+            margin: auto;
+            padding: 8%;
+            background-color: rgb(241, 244, 246);
+            border-radius: 3%;
+        }
+        button{
+            height: 30px;
+            width: 70px;
+            background-color: green;
+            border-radius: 18%;
+            color: white;
+            border-color: white;
+            text-align: center;
+            
+        }
+        input{
+           
+            margin-bottom: 10px;
+            padding-right: 50%;
+            padding-bottom: 8px;
+        }
+        select{
+            margin-bottom: 10px;
+            padding-right: 50%;
+            padding-bottom: 8px;
+        }
+        
+
+        </style>
+</head>
+<body>
+    
+    <div id="fst">
+        <h1 style="text-align: center;"> Feedback Form</h1>
+        <div id="snd">
+            <label for="ddb"> <b>Feedback Type:</b></label>
+            <br>
+            <select name="ddb" id="ddb" >
+            <option value="General Feedback">General Feedback</option>
+            <option value="Bug Report">Bug Report</option>
+            <option value="Feature Request">Feature Request</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="msg"> <b>Message:</b></label> 
+        <br>
+        <input type="text" id="msg" name="msg" draggable="true">   
+        <br>
+        <label for="rb"><b>Website Rating:</b ></label>
+        <br>
+        <input type="radio" id="ex" name="ex" value="Excellent">
+        <label for="ex"><b>Excellent</b></label>
+        <input type="radio" id="gd" name="gd" value="Good">
+        <label for="gd"><b>Good</b></label>
+        <input type="radio" id="avg" name="avg" value="Average">
+        <label for="avg"><b>Average</b></label>
+        <input type="radio" id="poor" name="poor" value="Poor">
+        <label for="poor"><b>Poor</b></label>
+        <br>
+        <label for="age"><b>Age (10-100)</b></label>
+        <br>
+        <input type="number" id="age" name="age" min="10" max="100">
+        <br>
+        <label for="em"><b>Email:</b></label>
+        <br>
+        <input type="email" id="em" name="em" >
+        <br>
+        <label for="pw"><b>Password (min 8 characters):</b></label>
+        <br>
+        <input type="password" id="pw" name="pw" min="8" >
+        <br>
+        <label for="ws"><b>Website URL (option):</b></label>
+        <br>
+        <input type="url" id="ws" name="ws"  >
+        <br>
+        <input type="checkbox" name="" id="tc">
+        <label for="tc"><b>I agree to the terms and conditions</b></label>
+        <br>
+        <button>Submit</button>
+        </div>
+        </div>
+</body>
+</html>
