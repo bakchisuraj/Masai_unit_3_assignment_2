@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>umso</title>
+    <style>
+        #parent{
+            height: auto;
+            width: auto;
+            margin: auto;
+            border: 1px solid black;
+            background-color: black;
+        }
+        #navbar{
+            
+            display: flex;
+            justify-content: space-between;
+            
+        
+        }
+        #nav1{
+            width: 15%;
+
+        }
+        #nav2{
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        #nav1 img{
+            height: 90px;
+            width: 150px;
+        }
+        #container{
+            padding-left: 40%;
+            margin: auto;
+        }
+        #generate{
+            border: 5px solid blueviolet;
+            
+        }
+        input{
+            width: 300px;
+            height: 40px;
+        }
+        #gen{
+            color: white;
+            background-color: blueviolet;
+        }
+        .navb{
+            color: white;
+            background-color: black;
+            border: 1px solid gray;
+        }
+        .tw{
+            color: white;
+        }
+        #sw{
+            color: blueviolet;
+        }
+        #ttw{
+            color: rgb(198, 194, 194);
+        }
+    </style>
+<body>
+    <div id="parent">
+        <div id="navbar">
+            <div id="nav1">
+                <img src="data:image/png;base64,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" alt="logo">
+            </div>
+            <div id="nav2">
+                <div><p>Pricing</p></div>
+                <div><p>Features</p></div>
+                <div><p>Features</p></div>
+                <div><button class="navb">Login</button></div>
+                <div><button class="navb">Sign up</button></div>
+                
+            </div>
+        </div>
+        <div id="container">
+            <h1 class="tw"><b>Get Your</b></h1>
+            <h1 id="sw">AI Generated Website</h1>
+            <h1 class="tw">In Seconds</h1>
+            <h2 id="ttw">Give it a try</h2>
+            <div id="Generate">
+                <input type="text" placeholder="Vega piza in">
+                <button id="gen">Generate</button>
+            </div>
+    
+    
+        </div>
+    </div>
+</body>
+</html>
